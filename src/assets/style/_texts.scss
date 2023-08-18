@@ -1,0 +1,44 @@
+.h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.h2 {
+  font-weight: 800;
+}
+
+.p1 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.p2{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.bold_p{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+}
+.purple_text {
+  color: $purple;
+}
+.green_text {
+  color: $green;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  
+}

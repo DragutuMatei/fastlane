@@ -1,0 +1,13 @@
+@media screen and (max-width: 1020px) {
+  .parts {
+    .part {
+      width: 100%;
+      min-width: 0px;
+      .texts {
+        p {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

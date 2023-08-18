@@ -1,0 +1,43 @@
+@import "./base";
+
+.cookies {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 270px;
+  background: $cookies_black;
+  padding: 28px;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .bold_p {
+    color: $white;
+    margin-bottom: 20px;
+  }
+  
+  .p2 {
+    color: $light_gray;
+    margin-bottom: 20px;
+    span {
+      color: $white;
+    }
+  }
+  .buts {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .but2 {
+      padding: 5px 8px;
+      h4 {
+        color: $green;
+      }
+    }
+    a {
+      color: $white;
+    }
+  }
+}
