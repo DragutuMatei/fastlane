@@ -2,6 +2,8 @@
 
 .cookies {
   position: fixed;
+  border-radius: 16px 16px 0 0;
+  border-bottom: 4px solid $green;
   bottom: 0;
   right: 0;
   width: 100%;
@@ -17,7 +19,7 @@
     color: $white;
     margin-bottom: 20px;
   }
-  
+
   .p2 {
     color: $light_gray;
     margin-bottom: 20px;
