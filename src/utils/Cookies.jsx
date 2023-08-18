@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Button2 from "../components/buttons/Button2";
 import "../assets/style/cookies.scss";
 function Cookies() {
-  const [display, setDisplay] = useState("flex");
+  // const [display, setDisplay] = useState("flex");
+  const [display, setDisplay] = useState("none");
   return (
     <section className="cookies" style={{ display: display }}>
       <p className="bold_p">Your privacy</p>

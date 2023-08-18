@@ -12,7 +12,11 @@ body {
   overflow-x: hidden;
   background: $black;
 }
-
+@media screen and (min-width: 1200px) {
+  html {
+    padding: 0px 100px;
+  }
+}
 h1,
 h2,
 h3,
