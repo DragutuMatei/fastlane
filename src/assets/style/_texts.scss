@@ -7,7 +7,7 @@
   font-weight: 800;
 }
 
-.h3{
+.h3 {
   font-weight: 800;
   font-size: 24px;
 }
@@ -17,12 +17,12 @@
   font-size: 16px;
 }
 
-.p2{
+.p2 {
   font-weight: 400;
   font-size: 12px;
 }
 
-.bold_p{
+.bold_p {
   font-weight: 700;
   font-size: 16px;
 }
@@ -43,8 +43,107 @@
   color: $green;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
+}
 
+@media screen and (max-width: 920px) {
+  .border .home .texts {
+    margin: 0;
+    h2 {
+      font-size: 23px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .parts .part .texts {
+    .title {
+      font-size: 20px;
+    }
+    p {
+      max-width: 100%;
+    }
+  }
+  section {
+    p.title {
+      font-weight: 500;
+      font-size: 16px;
+    }
+    h1 {
+      font-size: 21px !important;
+    }
+  }
+  .how_section .hows .how {
+    .as {
+      .a {
+        .title {
+          font-weight: 700;
+          font-size: 24px;
+        }
+        .p1 {
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+    }
+    .q h3 {
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 1390px) {
+  .why_section .whys {
+    .col .why {
+      width: 215px;
+      padding: 17px;
+      height: 300px;
+      justify-content: space-evenly;
+
+      .h2 {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      h4 {
+        font-size: 12px;
+      }
+      p {
+        font-size: 11px;
+      }
+    }
+
+    .imd {
+      padding: 40px;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .why_section .whys {
+    .col {
+      padding: 0 20px;
+      .why {
+        width: 100%;
+        padding: 17px;
+        height: 300px;
+        justify-content: space-evenly;
+
+        .h2 {
+          font-size: 15px;
+          line-height: 1.5;
+        }
+        h4 {
+          font-size: 13px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .how_section .hows {
+    .how {
+      width: 100%;
+    }
+  }
 }

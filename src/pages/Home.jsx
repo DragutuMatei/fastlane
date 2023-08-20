@@ -1,6 +1,5 @@
 import React from "react";
 import "../assets/style/home.scss";
-import "../assets/style/resize.scss";
 import Button1 from "../components/buttons/Button1";
 import Button2 from "../components/buttons/Button2";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -117,9 +116,11 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className="col imd">
-            <img src={require("../assets/images/Banner_12c.png")} alt="" />
-          </div>
+          <img
+            className="col imd"
+            src={require("../assets/images/Banner_12c.png")}
+            alt=""
+          />
         </div>
       </section>
       <section className="how_section">
@@ -177,7 +178,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <div className="never">
+      <section className="never">
         <h1 className="h1">
           NEVER <span>MISS A DROP!</span>
         </h1>
@@ -190,7 +191,7 @@ function Home() {
             <h4 className="button">Subscribe</h4>
           </Button1>
         </div>
-      </div>
+      </section>
       <Cookies />
     </>
   );

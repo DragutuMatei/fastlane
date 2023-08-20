@@ -1,0 +1,59 @@
+@media screen and (max-width: 960px) {
+  .why_section .whys .col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .parts {
+    .part {
+      width: 100%;
+      min-width: 0px;
+      .texts {
+        p {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 881px) {
+  footer .top .right {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    .right {
+      overflow: hidden;
+      padding: 0 20px;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      z-index: 99;
+      background: $black;
+      flex-direction: column;
+      height: max-content;
+      align-items: flex-start;
+      .l,
+      .r {
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+      }
+      .l .drop {
+        margin: 15px 0;
+      }
+      .r {
+        h4.button,
+        .but3 {
+          margin: 15px 0;
+        }
+      }
+    }
+    .hamb {
+      display: flex;
+    }
+  }
+}
