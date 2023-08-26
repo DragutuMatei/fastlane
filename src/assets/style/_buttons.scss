@@ -4,6 +4,7 @@
   padding: 0px 10px;
   border-radius: 13px;
   cursor: pointer;
+  user-select: none;
 }
 .but1 {
   background: $dark_gray;
@@ -37,4 +38,9 @@
   border-radius: 16px;
   padding: 6px;
   box-sizing: border-box;
+}
+
+.but3_1{
+  background: transparent;
+  border: 2px solid $light_gray;
 }
