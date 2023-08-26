@@ -1,13 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/style/home2.scss";
 import Button2 from "../components/buttons/Button2";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import {
+  IoIosArrowBack,
+  IoIosArrowForward,
+  IoIosArrowRoundForward,
+} from "react-icons/io";
 import Nicetext from "../components/Nicetext";
 import Button1 from "../components/buttons/Button1";
 import Button3 from "../components/buttons/Button3";
 
+let i = 0;
 function Home2() {
+  const [images, setImages] = useState([
+    require("../assets/images/mockup.png"),
+    require("../assets/images/mockup2.png"),
+    require("../assets/images/mockup3.png"),
+  ]);
+  const [active, setActive] = useState(require("../assets/images/mockup.png"));
+  const next = () => {
+    if (i + 1 < images.length) {
+      i++;
+      setActive(images[i]);
+    } else {
+      i = 0;
+      setActive(images[0]);
+    }
+  };
+  const prev = () => {
+    if (i - 1 <= 0) {
+      i--;
+      setActive(images[i]);
+    } else {
+      i = images.length - 1;
+      setActive(images[i]);
+    }
+  };
   return (
     <div className="home">
       <div className="f">
@@ -32,7 +61,7 @@ function Home2() {
         </div>
       </div>
 
-      <div style={{ padding: "10px 0px 0 100px" }}>
+      <div className="padding">
         <div className="border">
           <div id="banner2">
             <h2 className="h2">
@@ -63,17 +92,206 @@ function Home2() {
           </div>
         </div>
       </div>
-      <div className="us">
+
+      <div className="us dr">
         <h1 className="h1">
-          WHY <span className="green_text">CHOOSE US?</span>
+          HOW <span className="green_text">IT WORKS?</span>
         </h1>
-        <div className="ss dr">
-          <div className="border_green">
+        <div className="ss padding">
+          <div className="borders green">
             <div className="card">
               <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
             </div>
           </div>
+          <div className="borders green">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+          <div className="borders green">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+          <div className="borders green">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="us st">
+        <h1 className="h1">
+          WHY <span className="purple_text">CHOOSE US?</span>
+        </h1>
+        <div className="ss padding">
+          <div className="borders purple">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+          <div className="borders purple">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+          <div className="borders purple">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+          <div className="borders purple">
+            <div className="card">
+              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+              <ul>
+                <li>Engage and Reward</li>
+              </ul>
+              <p className="p1">
+                FastLane empowers community creators to incentivize meaningful
+                engagement within their projects.
+              </p>
+              <p className="p1">
+                By offering tangible rewards in the form of tokens, community
+                members are motivated to participate actively and contribute
+                constructively.
+              </p>
+              <p className="p1">
+                This approach fosters a vibrant and committed user base that
+                drives project growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mockups padding">
+        <div className="logo">
+          <img src={require("../assets/images/logo_mock.png")} alt="" />
+        </div>
+        <div className="carousel">
+          <IoIosArrowBack onClick={prev} />
+          <div className="img">
+            <div className="dots">
+              <div className="dot p"></div>
+              <div className="dot g"></div>
+              <div className="dot b"></div>
+            </div>
+            <img src={active} alt="" />
+          </div>
+          <IoIosArrowForward onClick={next} />
         </div>
       </div>
     </div>

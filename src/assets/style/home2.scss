@@ -3,7 +3,6 @@
 
 .home {
   width: 100%;
-  min-height: 300vh;
   background: url(../images/back_nice.png);
   background-position: center top;
   background-size: cover;
@@ -25,7 +24,7 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    padding: 10px 0px 0 100px;
+    padding: 10px 100px;
 
     .h2 {
       position: relative;
@@ -45,8 +44,9 @@
 
     #banner1 {
       position: relative;
-      width: 600px;
-      height: 250px;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
       margin-top: 50px;
       border: 2px solid #555555;
       border-radius: 16px;
@@ -76,6 +76,9 @@
       p {
         z-index: 2;
       }
+      p {
+        margin: 20px 0;
+      }
       .button {
         z-index: 2;
         margin: 10px 0;
@@ -92,83 +95,230 @@
   }
 
   .border {
-    background: radial-gradient(
-          circle at 100% 100%,
-          #191919 0,
-          #191919 3px,
-          transparent 3px
-        )
-        0% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 0 100%, #191919 0, #191919 3px, transparent 3px)
-        100% 0%/8px 8px no-repeat,
-      radial-gradient(circle at 100% 0, #191919 0, #191919 3px, transparent 3px)
-        0% 100%/8px 8px no-repeat,
-      radial-gradient(circle at 0 0, #191919 0, #191919 3px, transparent 3px)
-        100% 100%/8px 8px no-repeat,
-      linear-gradient(#191919, #191919) 50% 50% / calc(100% - 10px)
-        calc(100% - 16px) no-repeat,
-      linear-gradient(#191919, #191919) 50% 50% / calc(100% - 16px)
-        calc(100% - 10px) no-repeat,
-      linear-gradient(
-        119deg,
-        #7120d8 0%,
-        rgba(78, 141, 197, 0) 39%,
-        rgba(72, 171, 224, 0.06) 48%,
-        rgba(72, 171, 224, 0) 100%
-      );
-
+    border: 2px transparent;
     border-radius: 16px;
-    padding: 2px;
-    box-sizing: border-box;
+    background-image: url(../images/banner1.png),
+      linear-gradient(to right, $purple, rgba(0, 0, 0, 0));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 400px;
+    height: auto;
     position: relative;
     margin-top: 50px;
     overflow: hidden;
+    box-sizing: border-box;
 
     #banner2 {
       position: relative;
       width: 100%;
-      height: 400px;
       border-radius: 16px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      padding: 20px;
+      padding: 30px 20px;
       z-index: 2;
       color: $white;
       backdrop-filter: blur(10px);
 
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        border-radius: 16px;
-        bottom: 0px;
-        left: 0px;
-        background: url(../images/banner2.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-        opacity: 0.5;
-      }
-
       & > * {
-        width: 50%;
+        width: 60%;
         z-index: 2;
+      }
+      ul li,
+      p {
+        margin: 20px 0;
       }
       .buts {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        .button{
-            padding: 6px 8px
+        flex-wrap: wrap;
+
+        .button {
+          padding: 6px 8px;
+        }
+        .but1,
+        .but3_1 {
+          margin-bottom: 10px;
         }
       }
     }
   }
+
+  .us.dr {
+    .ss {
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-position: right center !important;
+      background: url(../images/dr.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+    h1 {
+      text-align: end;
+    }
+  }
+
+  .us.st {
+    .ss {
+      justify-content: flex-end;
+      align-items: flex-end;
+      background-position: left center;
+      background: url(../images/st.png);
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+    h1 {
+      text-align: start;
+    }
+  }
+
+  .us {
+    margin-top: 220px;
+    position: relative;
+    width: 100%;
+
+    h1 {
+      font-size: 38px;
+      color: $white;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .ss {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      .borders {
+        &.green {
+          border: double 2px transparent;
+          border-radius: 16px;
+          background-image: url(../images/banner1.png),
+            linear-gradient(to right, $green, rgba(0, 0, 0, 0) 80%);
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.purple {
+          border: double 2px transparent;
+          border-radius: 16px;
+          background-image: url(../images/banner1.png),
+            linear-gradient(to left, $purple, rgba(0, 0, 0, 0) 80%);
+          background-origin: border-box;
+          background-clip: content-box, border-box;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        width: 100%;
+        max-width: 550px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        .card {
+          padding: 15px 20px;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          color: $white;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          h3 {
+            font-size: 20px;
+          }
+          ul li {
+            font-size: 14px;
+            text-decoration: underline 1px solid white;
+            margin-left: 15px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .mockups {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin-top: 100px;
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .carousel {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 50px;
+      user-select: none;
+
+      svg {
+        color: $black;
+        font-size: 100px;
+        margin: 0 20px;
+        cursor: pointer;
+      }
+
+      .img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        .dots {
+          display: flex;
+          width: fit-content;
+          margin-bottom: 10px;
+          margin-right: 30px;
+
+          .dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            margin-left: 10px;
+          }
+          .p {
+            background: $purple;
+          }
+          .g {
+            background: $green;
+          }
+          .b {
+            background: $black;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.padding {
+  padding: 10px 100px;
 }
 
 @import "./texts";
