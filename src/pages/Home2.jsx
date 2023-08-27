@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import "../assets/style/home2.scss";
 import Button2 from "../components/buttons/Button2";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import {
-  IoIosArrowBack,
-  IoIosArrowForward,
-  IoIosArrowRoundForward,
-} from "react-icons/io";
-import Nicetext from "../components/Nicetext";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button1 from "../components/buttons/Button1";
 import Button3 from "../components/buttons/Button3";
 
@@ -29,17 +24,17 @@ function Home2() {
     }
   };
   const prev = () => {
-    if (i - 1 <= 0) {
+    if (i - 1 >= 0) {
       i--;
       setActive(images[i]);
     } else {
       i = images.length - 1;
-      setActive(images[i]);
+      setActive(images[images.length - 1]);
     }
   };
   return (
     <div className="home">
-      <div className="f">
+      <section className="f padding">
         <h2 className="h2">
           Fueling Engagement on the <span id="first">Fast</span>
           <span id="second">Lane</span> to Success.
@@ -59,9 +54,9 @@ function Home2() {
             </h4>
           </Button2>
         </div>
-      </div>
+      </section>
 
-      <div className="padding">
+      <section className="padding">
         <div className="border">
           <div id="banner2">
             <h2 className="h2">
@@ -91,9 +86,9 @@ function Home2() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="us dr">
+      <section className="us dr">
         <h1 className="h1">
           HOW <span className="green_text">IT WORKS?</span>
         </h1>
@@ -183,9 +178,9 @@ function Home2() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="us st">
+      <section className="us st">
         <h1 className="h1">
           WHY <span className="purple_text">CHOOSE US?</span>
         </h1>
@@ -275,9 +270,9 @@ function Home2() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="mockups padding">
+      <section className="mockups padding">
         <div className="logo">
           <img src={require("../assets/images/logo_mock.png")} alt="" />
         </div>
@@ -293,7 +288,65 @@ function Home2() {
           </div>
           <IoIosArrowForward onClick={next} />
         </div>
-      </div>
+      </section>
+      <section className="tt padding">
+        <h1 className="h1">
+          Earn as <span className="purple_text">You Grow</span>
+        </h1>
+        <div className="cards">
+          <div className="card">
+            <h3 className="title">BETA WHITELIST AICI FORM</h3>
+            <p className="p1">Be part of the movement!</p>
+            <Button2>
+              <h4 className="button">
+                Join our community
+                <span className="icon">
+                  <AiOutlineArrowRight />
+                </span>
+              </h4>
+            </Button2>
+          </div>
+          <div className="card">
+            <h3 className="title">BETA WHITELIST AICI FORM</h3>
+            <p className="p1">Be part of the movement!</p>
+            <Button2>
+              <h4 className="button">
+                Join our community
+                <span className="icon">
+                  <AiOutlineArrowRight />
+                </span>
+              </h4>
+            </Button2>
+          </div>
+          <div className="card">
+            <h3 className="title">BETA WHITELIST AICI FORM</h3>
+            <p className="p1">Be part of the movement!</p>
+            <Button2>
+              <h4 className="button">
+                Join our community
+                <span className="icon">
+                  <AiOutlineArrowRight />
+                </span>
+              </h4>
+            </Button2>
+          </div>
+          <div className="card">
+            <h3 className="title">BETA WHITELIST AICI FORM</h3>
+            <p className="p1">Be part of the movement!</p>
+            <Button2>
+              <h4 className="button">
+                Join our community
+                <span className="icon">
+                  <AiOutlineArrowRight />
+                </span>
+              </h4>
+            </Button2>
+          </div>
+        </div>
+        <h1 className="h1">
+          Engage as <span className="green_text">You Glow</span>
+        </h1>
+      </section>
     </div>
   );
 }
