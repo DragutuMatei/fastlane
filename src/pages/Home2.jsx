@@ -5,6 +5,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button1 from "../components/buttons/Button1";
 import Button3 from "../components/buttons/Button3";
+import Cookies from "../utils/Cookies";
 
 let i = 0;
 function Home2() {
@@ -347,6 +348,8 @@ function Home2() {
           Engage as <span className="green_text">You Glow</span>
         </h1>
       </section>
+
+      <Cookies />
     </div>
   );
 }
