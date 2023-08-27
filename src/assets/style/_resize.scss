@@ -99,3 +99,23 @@
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .home {
+    .f .h2 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    .border #banner2 .buts {
+      width: 100%;
+      flex-direction: column;
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}
