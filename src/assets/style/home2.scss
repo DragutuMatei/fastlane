@@ -47,7 +47,7 @@
       max-width: 600px;
       height: auto;
       margin-top: 50px;
-      border: 2px solid #555555;
+      border: 3px solid #555555;
       border-radius: 16px;
       display: flex;
       flex-direction: column;
@@ -94,7 +94,7 @@
   }
 
   .border {
-    border: 2px transparent;
+    border: 0.1px transparent;
     border-radius: 16px;
     background-image: url(../images/banner1.png),
       linear-gradient(to right, $purple, rgba(0, 0, 0, 0));
@@ -264,7 +264,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         width: 100%;
         max-width: 360px;
       }
@@ -283,10 +283,10 @@
         margin: 0 20px;
         cursor: pointer;
         transition: 0.3s ease-in-out;
-        &:hover{
-            color: $white;
+        &:hover {
+          color: $white;
         }
-    }
+      }
 
       .img {
         display: flex;
@@ -347,7 +347,7 @@
         height: 200px;
         background: url(../images/banner1.png);
         border-radius: 16px;
-        border: 2px solid $light_gray;
+        border: 3px solid #555555;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
