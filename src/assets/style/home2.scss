@@ -124,7 +124,8 @@
       backdrop-filter: blur(10px);
 
       & > * {
-        width: 60%;
+        max-width: 650px;
+        width: 100%;
         z-index: 2;
       }
       ul li,
@@ -375,6 +376,7 @@
 
 .padding {
   padding: 10px 100px;
+  width: 100%;
 }
 
 @import "./texts";
