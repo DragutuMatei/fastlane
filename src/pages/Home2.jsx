@@ -10,11 +10,13 @@ import Cookies from "../utils/Cookies";
 let i = 0;
 function Home2() {
   const [images, setImages] = useState([
-    require("../assets/images/mockup.png"),
-    require("../assets/images/mockup2.png"),
-    require("../assets/images/mockup3.png"),
+    require("../assets/images/mock1.png"),
+    require("../assets/images/mock2.png"),
+    require("../assets/images/mock3.png"),
+    require("../assets/images/mock4.png"),
+    require("../assets/images/mock5.png"),
   ]);
-  const [active, setActive] = useState(require("../assets/images/mockup.png"));
+  const [active, setActive] = useState(require("../assets/images/mock1.png"));
   const next = () => {
     if (i + 1 < images.length) {
       i++;

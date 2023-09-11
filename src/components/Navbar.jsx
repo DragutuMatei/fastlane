@@ -9,9 +9,9 @@ function Navbar() {
     <nav>
       <div className="left">
         <img
-          className="logo"
-          src={require("../assets/images/logo_full.png")}
+          src={require("../assets/images/text_logo.svg").default}
           alt=""
+          className="logo"
         />
       </div>
       <RxHamburgerMenu
