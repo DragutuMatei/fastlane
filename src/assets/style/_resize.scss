@@ -107,6 +107,16 @@
     }
   }
 }
+@media screen and (max-width: 650px) {
+  .home {
+    .us.dr .ss {
+      background-size: contain !important;
+      .borders:nth-of-type(3) {
+        margin-top: 100vw;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 750px) {
   .home {
