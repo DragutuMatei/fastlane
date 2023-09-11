@@ -275,7 +275,7 @@ function Home2() {
         </div>
       </section>
 
-      <section className="mockups padding">
+      {/* <section className="mockups padding">
         <div className="logo">
           <img src={require("../assets/images/logo_mock.png")} alt="" />
         </div>
@@ -291,7 +291,7 @@ function Home2() {
           </div>
           <IoIosArrowForward onClick={next} />
         </div>
-      </section>
+      </section> */}
       <section className="tt padding">
         <h1 className="h1">
           Earn as <span className="purple_text">You Grow</span>
