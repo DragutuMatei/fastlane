@@ -40,7 +40,7 @@ function Navbar() {
         <div className="r">
           <h4 className="button r">Join our community</h4>
           <Button3>
-            <h4 className="button">Read our WhitePaper</h4>
+            <h4 className="button">Read our Gitbook</h4>
           </Button3>
         </div>
       </div>

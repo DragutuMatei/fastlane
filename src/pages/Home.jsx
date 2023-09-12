@@ -29,7 +29,7 @@ function Home() {
               Here you can find all the information needed about the project.
             </p>
             <Button1>
-              <h4 className="button">Check our WhitePaper</h4>
+              <h4 className="button">Check our Gitbook</h4>
             </Button1>
           </div>
         </div>
