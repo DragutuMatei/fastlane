@@ -298,7 +298,7 @@ function Home2() {
         </h1>
         <div className="cards">
           <div className="card">
-            <h3 className="title">BETA WHITELIST AICI FORM</h3>
+            <h3 className="title">BETA aLIST AICI FORM</h3>
             <p className="p1">Be part of the movement!</p>
             <Button2>
               <h4 className="button">
