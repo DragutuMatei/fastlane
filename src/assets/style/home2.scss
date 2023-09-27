@@ -135,14 +135,17 @@
       .buts {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
-
+        width: 100%;
+        max-width: 100%;
+        
         .button {
           padding: 6px 8px;
         }
         .but1,
         .but3_1 {
+          margin-right: 20px;
           margin-bottom: 10px;
         }
       }

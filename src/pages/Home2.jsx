@@ -74,7 +74,7 @@ function Home2() {
               interaction, one task at a time.
             </p>
             <div className="buts">
-              <Button1>
+              <Button1 link={"https://demo.fastlane.buzz/"}>
                 <h4 className="button">Read our LitePaper</h4>
               </Button1>
               <Button3>
