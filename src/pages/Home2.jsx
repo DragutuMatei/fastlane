@@ -80,7 +80,7 @@ function Home2() {
               <Button3 link={""}>
                 <h4 className="button">Cont Telegram</h4>
               </Button3>
-              <Button3>
+              <Button3 link={"https://docs.fastlane.buzz/faq/#top"}>
                 <h4 className="button">FAQ</h4>
               </Button3>
               <Button3 link={"https://twitter.com/fstlaneapp"}>
