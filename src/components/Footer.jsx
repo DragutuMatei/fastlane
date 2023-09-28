@@ -1,7 +1,6 @@
 import React from "react";
 import "../assets/style/footer.scss";
-import { BsTwitter } from "react-icons/bs";
-import { AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
+import { BsTelegram } from "react-icons/bs";
 function Footer() {
   return (
     <footer>
@@ -15,9 +14,9 @@ function Footer() {
             /> */}
           </div>
           <div className="socials">
-            <BsTwitter />
-            <AiOutlineInstagram />
-            <AiFillYoutube />
+            <a href="">
+              <BsTelegram />
+            </a>
           </div>
           <p className="p1">
             Join our Telegram channel or follow us on Twitter to keep up to date
