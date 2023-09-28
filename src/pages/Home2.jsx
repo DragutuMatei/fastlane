@@ -75,16 +75,16 @@ function Home2() {
             </p>
             <div className="buts">
               <Button1 link={"https://demo.fastlane.buzz/"}>
-                <h4 className="button">Read our LitePaper</h4>
+                <h4 className="button">Read our Docs</h4>
               </Button1>
-              <Button3>
-                <h4 className="button">FastLane Community</h4>
+              <Button3 link={""}>
+                <h4 className="button">Cont Telegram</h4>
               </Button3>
               <Button3>
                 <h4 className="button">FAQ</h4>
               </Button3>
-              <Button3>
-                <h4 className="button">Check our Twitter</h4>
+              <Button3 link={"https://twitter.com/fstlaneapp"}>
+                <h4 className="button">Link X</h4>
               </Button3>
             </div>
           </div>
