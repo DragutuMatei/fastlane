@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/style/footer.scss";
 import { BsTelegram } from "react-icons/bs";
-import { AiFillTwitterCircle } from "react-icons/ai";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -17,7 +17,7 @@ function Footer() {
           </div>
           <div className="socials">
             <a href="https://twitter.com/fstlaneapp" target="_blank">
-              <AiFillTwitterCircle style={{ fontSize: "34.29px" }} />
+              <FaSquareXTwitter style={{ fontSize: "34.29px" }} />
             </a>
             <a href="">
               <BsTelegram />
