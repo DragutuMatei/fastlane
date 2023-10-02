@@ -19,7 +19,7 @@ function Navbar() {
         onClick={() => setHeight(height === "0px" ? "max-content" : "0px")}
       />
       <div className="right" style={{ height: height }}>
-        <div className="l">
+        {/* <div className="l">
           <div className="drop">
             <h4 className="button">
               Resources
@@ -36,7 +36,7 @@ function Navbar() {
               </span>
             </h4>
           </div>
-        </div>
+        </div> */}
         <div className="r">
           <h4 className="button r">Join our community</h4>
           <Button3 link={"https://docs.fastlane.buzz"}>

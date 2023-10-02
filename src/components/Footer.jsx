@@ -32,14 +32,12 @@ function Footer() {
           <div className="l">
             <h3 className="title">Quick Links</h3>
             <p className="p1">About</p>
-            <p className="p1">Collection</p>
             <p className="p1">Roadmap</p>
             <p className="p1">FAQs</p>
           </div>
           <div className="r">
             <h3 className="title">Community</h3>
             <p className="p1">How it works!</p>
-            <p className="p1">Blockchain</p>
             <p className="p1">Get in touch</p>
           </div>
         </div>

@@ -78,7 +78,7 @@ function Home2() {
                 <h4 className="button">Read our Docs</h4>
               </Button1>
               <Button3 link={""}>
-                <h4 className="button">Check our Telegram</h4>
+                <h4 className="button">Join us on Telegram</h4>
               </Button3>
               <Button3 link={"https://docs.fastlane.buzz/faq/#top"}>
                 <h4 className="button">FAQ</h4>
@@ -98,15 +98,23 @@ function Home2() {
         <div className="ss padding">
           <div className="borders green">
             <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
+              <h3 className="title">
+                {" "}
+                <img
+                  style={{ width: 30 }}
+                  src={require("../assets/images/icon_logo.svg").default}
+                  alt=""
+                />{" "}
+                Set up the board
+              </h3>
+              {/* <ul>
                 <li>Engage and Reward</li>
-              </ul>
+              </ul> */}
               <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
+                Start by creating a board on our platform. This board will serve
+                as a centralized hub for all your activities.
               </p>
-              <p className="p1">
+              {/* <p className="p1">
                 By offering tangible rewards in the form of tokens, community
                 members are motivated to participate actively and contribute
                 constructively.
@@ -114,69 +122,62 @@ function Home2() {
               <p className="p1">
                 This approach fosters a vibrant and committed user base that
                 drives project growth.
+              </p> */}
+            </div>
+          </div>
+          <div className="borders green">
+            <div className="card">
+              <h3 className="title">
+                {" "}
+                <img
+                  style={{ width: 30 }}
+                  src={require("../assets/images/icon_logo.svg").default}
+                  alt=""
+                />{" "}
+                Create tasks
+              </h3>
+              <p className="p1">
+                Use FS Tokens to generate tasks on your board. These tasks are
+                integral for the success of your community as they represent
+                items that need to be completed.
               </p>
             </div>
           </div>
           <div className="borders green">
             <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
+              <h3 className="title">
+                {" "}
+                <img
+                  style={{ width: 30 }}
+                  src={require("../assets/images/icon_logo.svg").default}
+                  alt=""
+                />{" "}
+                Select tasks
+              </h3>
               <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
-              </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
+                Users can browse through the task list on the board and choose
+                the tasks they wish to undertake and complete.
               </p>
             </div>
           </div>
           <div className="borders green">
             <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
+              <h3 className="title">
+                {" "}
+                <img
+                  style={{ width: 30 }}
+                  src={require("../assets/images/icon_logo.svg").default}
+                  alt=""
+                />{" "}
+                Task Validation and Rewards
+              </h3>
               <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
+                Upon successful completion of a task, users are required to
+                validate their accomplishment.
               </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
-              </p>
-            </div>
-          </div>
-          <div className="borders green">
-            <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
-              <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
-              </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
+              <p className="p1"> As a token of recognition for
+                their efforts, users will be rewarded with FS Tokens, providing
+                a tangible incentive for their contributions.
               </p>
             </div>
           </div>
@@ -294,7 +295,7 @@ function Home2() {
       </section> */}
       <section className="tt padding">
         <h1 className="h1">
-          Earn as <span className="purple_text">You Grow</span>
+          Join our <span className="purple_text">Beta</span>
         </h1>
         <div className="cards">
           <div className="card">
@@ -346,9 +347,9 @@ function Home2() {
             </Button2>
           </div>
         </div>
-        <h1 className="h1">
+        {/* <h1 className="h1">
           Engage as <span className="green_text">You Glow</span>
-        </h1>
+        </h1> */}
       </section>
 
       <Cookies />

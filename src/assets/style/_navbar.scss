@@ -14,9 +14,9 @@ nav {
   }
 
   .logo {
-    margin-right: 10px;      height: auto;
-      width: 200px;
-    
+    margin-right: 10px;
+    height: auto;
+    width: 200px;
   }
   .right {
     width: inherit;
@@ -26,7 +26,7 @@ nav {
   .right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     .l,
     .r {
       display: flex;
