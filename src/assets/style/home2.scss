@@ -348,6 +348,12 @@
     h1 {
       margin: 30px 0;
     }
+    .roadmap {
+      width: 90%;
+      border-radius: 30px;
+      margin: 30px 0;
+      border: 3px solid #555555;
+    }
     .cards {
       width: 100%;
       display: flex;
@@ -390,6 +396,28 @@
 .padding {
   padding: 10px 100px;
   width: 100%;
+}
+
+.hover_green {
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    & path:first-of-type {
+      fill: $green;
+    }
+    & rect:last-of-type {
+      fill: $purple;
+    }
+  }
+
+  .hov:hover {
+    & + path:first-of-type {
+      fill: $green;
+    }
+    & + rect:last-of-type {
+      fill: $purple;
+    }
+  }
 }
 
 @import "./texts";
