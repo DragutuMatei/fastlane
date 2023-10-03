@@ -155,8 +155,7 @@ function Home2() {
                 Select tasks
               </h3>
               <p className="p1">
-                Users can browse through the task list on the board and choose
-                the tasks they wish to undertake and complete.
+               Add FS Tokens to your balance before proceeding to allocate them for each individual task.  
               </p>
             </div>
           </div>
