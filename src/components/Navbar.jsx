@@ -9,7 +9,7 @@ function Navbar() {
     <nav>
       <div className="left">
         <img
-          src={require("../assets/images/text_logo.svg").default}
+          src={require("../assets/images/logo_full.svg").default}
           alt=""
           className="logo"
         />

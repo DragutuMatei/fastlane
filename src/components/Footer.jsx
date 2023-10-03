@@ -31,14 +31,14 @@ function Footer() {
         <div className="right">
           <div className="l">
             <h3 className="title">Quick Links</h3>
-            <p className="p1">About</p>
-            <p className="p1">Roadmap</p>
-            <p className="p1">FAQs</p>
+            <a href="#about" className="p1">About</a>
+            <a href="#roadmap" className="p1">Roadmap</a>
+            <a href="https://docs.fastlane.buzz/faq/#top" className="p1">FAQs</a>
           </div>
           <div className="r">
             <h3 className="title">Community</h3>
-            <p className="p1">How it works!</p>
-            <p className="p1">Get in touch</p>
+            <a href="#how" className="p1">How it works!</a>
+            <a href="#" className="p1">Get in touch</a>
           </div>
         </div>
       </div>
