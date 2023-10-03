@@ -33,7 +33,7 @@ function Footer() {
             <h3 className="title">Quick Links</h3>
             <a href="#about" className="p1">About</a>
             <a href="#roadmap" className="p1">Roadmap</a>
-            <a href="https://docs.fastlane.buzz/faq/#top" className="p1">FAQs</a>
+            <a target="_blank" href="https://docs.fastlane.buzz/faq/#top" className="p1">FAQs</a>
           </div>
           <div className="r">
             <h3 className="title">Community</h3>
