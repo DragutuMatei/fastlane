@@ -8,6 +8,7 @@ import Button3 from "../components/buttons/Button3";
 import Cookies from "../utils/Cookies";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useParallax } from "react-scroll-parallax";
 
 let i = 0;
 function Home2() {
@@ -42,116 +43,187 @@ function Home2() {
     AOS.init();
   }, []);
 
+  const [b1, setb1] = useState(550);
+  const [b2, setb2] = useState(300);
+  const [b3, setb3] = useState(700);
+  const [b4, setb4] = useState(1500);
+  const [b5, setb5] = useState(120);
+  const [b6, setb6] = useState(550);
+  const [b7, setb7] = useState(550);
+  const [b8, setb8] = useState(550);
+  const [b9, setb9] = useState(550);
+  const [b10, setb10] = useState(550);
+
+  useEffect(() => {
+    var lastScrollTop = 0;
+    const onScroll = (e) => {
+      var st = document.documentElement.scrollTop;
+      if (st > lastScrollTop) {
+        setb1((old) => old - 2);
+        setb2((old) => old - 3);
+        setb3((old) => old - 1.4);
+        setb4((old) => old - 2);
+        setb5((old) => old + 2);
+      } else if (st < lastScrollTop) {
+        setb1((old) => old + 2);
+        setb2((old) => old + 3);
+        setb3((old) => old + 1.4);
+        setb4((old) => old + 2);
+        setb5((old) => old - 2);
+
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="home">
-      <section className="f padding">
-        <h2 className="h2" data-aos="fade-right">
-          Fueling Engagement on the <span id="first">Fast</span>
-          <span id="second">Lane</span> to Success.
-        </h2>
-        <div id="banner1" data-aos="fade-left">
-          <h3 className="title" data-aos="fade-down" data-aos-delay="400">
-            Exciting news! <br /> FASTLANE’s community is launching.
-          </h3>
-          <p className="p1" data-aos="fade-up" data-aos-delay="500">
-            Be part of the movement!
-          </p>
-
-          <Button2>
-            <h4 data-aos="fade-left" data-aos-delay="550" className="button">
-              Join our community
-              <span className="icon">
-                <AiOutlineArrowRight />
-              </span>
-            </h4>
-          </Button2>
-        </div>
-      </section>
-
-      <section className="padding" id="about">
-        <div className="border" data-aos="fade-left">
-          <div id="banner2">
-            <h2 className="h2" data-aos="fade-down" data-aos-delay="400">
-              See how we are planning to shape the future of WEB3 Communities.
-            </h2>
-            <p className="p1" data-aos="fade-right" data-aos-delay="500">
-              Explore our vision for a rewarding tomorrow, where engagement
-              ignites innovation and collaboration leads the way.
-            </p>{" "}
-            <p className="p1" data-aos="fade-right" data-aos-delay="500">
-              Join us as we forge a new path, shaping the future of community
-              interaction, one task at a time.
+    <div className="aa">
+      <div className="background"></div>
+      <img
+        src={require("../assets/images/bila1.png")}
+        className="b b1"
+        style={{ top: b1 }}
+        alt=""
+      />
+      <img
+        src={require("../assets/images/bila2.png")}
+        className="b b2"
+        style={{ left: b2 }}
+        alt=""
+      />
+      <img
+        src={require("../assets/images/bila3.png")}
+        className="b b3"
+        style={{ top: b3 }}
+        alt=""
+      />
+      <img src={require("../assets/images/bila4.png")} className="b b4"
+        style={{ top: b4 }}
+        alt="" />
+      <img src={require("../assets/images/bila5.png")} className="b b5"
+        style={{ left: b5 }}
+        alt="" />
+      {/* <img src={require("../assets/images/bila6.png")} className="b b6" alt="" />
+      <img src={require("../assets/images/bila7.png")} className="b b7" alt="" />
+      <img src={require("../assets/images/bila8.png")} className="b b8" alt="" />
+      <img src={require("../assets/images/bila9.png")} className="b b9" alt="" /> */}
+      <img
+        src={require("../assets/images/bila10.png")}
+        className="b10"
+        alt=""
+      />
+      <div className="home">
+        <section className="f padding">
+          <h2 className="h2" data-aos="fade-right">
+            Fueling Engagement on the <span id="first">Fast</span>
+            <span id="second">Lane</span> to Success.
+          </h2>
+          <div id="banner1" data-aos="fade-left">
+            <h3 className="title" data-aos="fade-down" data-aos-delay="400">
+              Exciting news! <br /> FASTLANE’s community is launching.
+            </h3>
+            <p className="p1" data-aos="fade-up" data-aos-delay="500">
+              Be part of the movement!
             </p>
-            <div className="buts" data-aos="fade-right" data-aos-delay="600">
-              <Button1 link={"https://demo.fastlane.buzz/"}>
-                <h4
-                  className="button"
-                  data-aos="fade-down"
-                  data-aos-delay="600"
-                >
-                  Read our Docs
-                </h4>
-              </Button1>
-              <Button3 link={""}>
-                <h4
-                  className="button"
-                  data-aos="fade-down"
-                  data-aos-delay="600"
-                >
-                  Join us on Telegram
-                </h4>
-              </Button3>
-              <Button3 link={"https://docs.fastlane.buzz/faq/#top"}>
-                <h4
-                  className="button"
-                  data-aos="fade-down"
-                  data-aos-delay="600"
-                >
-                  FAQ
-                </h4>
-              </Button3>
-              <Button3 link={"https://twitter.com/fstlaneapp"}>
-                <h4
-                  className="button"
-                  data-aos="fade-down"
-                  data-aos-delay="600"
-                >
-                  Check our Twitter
-                </h4>
-              </Button3>
+
+            <Button2>
+              <h4 data-aos="fade-left" data-aos-delay="550" className="button">
+                Join our community
+                <span className="icon">
+                  <AiOutlineArrowRight />
+                </span>
+              </h4>
+            </Button2>
+          </div>
+        </section>
+
+        <section className="padding" id="about">
+          <div className="border" data-aos="fade-left">
+            <div id="banner2">
+              <h2 className="h2" data-aos="fade-down" data-aos-delay="400">
+                See how we are planning to shape the future of WEB3 Communities.
+              </h2>
+              <p className="p1" data-aos="fade-right" data-aos-delay="500">
+                Explore our vision for a rewarding tomorrow, where engagement
+                ignites innovation and collaboration leads the way.
+              </p>{" "}
+              <p className="p1" data-aos="fade-right" data-aos-delay="500">
+                Join us as we forge a new path, shaping the future of community
+                interaction, one task at a time.
+              </p>
+              <div className="buts" data-aos="fade-right" data-aos-delay="600">
+                <Button1 link={"https://demo.fastlane.buzz/"}>
+                  <h4
+                    className="button"
+                    data-aos="fade-down"
+                    data-aos-delay="600"
+                  >
+                    Read our Docs
+                  </h4>
+                </Button1>
+                <Button3 link={""}>
+                  <h4
+                    className="button"
+                    data-aos="fade-down"
+                    data-aos-delay="600"
+                  >
+                    Join us on Telegram
+                  </h4>
+                </Button3>
+                <Button3 link={"https://docs.fastlane.buzz/faq/#top"}>
+                  <h4
+                    className="button"
+                    data-aos="fade-down"
+                    data-aos-delay="600"
+                  >
+                    FAQ
+                  </h4>
+                </Button3>
+                <Button3 link={"https://twitter.com/fstlaneapp"}>
+                  <h4
+                    className="button"
+                    data-aos="fade-down"
+                    data-aos-delay="600"
+                  >
+                    Check our Twitter
+                  </h4>
+                </Button3>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="us dr" id="how">
-        <h1 className="h1" data-aos="fade-down">
-          HOW <span className="green_text">IT WORKS?</span>
-        </h1>
-        <div className="ss padding">
-          <div
-            className="borders green"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">
-                {" "}
-                <img
-                  style={{ width: 30 }}
-                  src={require("../assets/images/icon_logo.svg").default}
-                  alt=""
-                />{" "}
-                Set up the board
-              </h3>
-              {/* <ul>
+        <section className="us dr" id="how">
+          <h1 className="h1" data-aos="fade-down">
+            HOW <span className="green_text">IT WORKS?</span>
+          </h1>
+          <div className="ss padding">
+            <div
+              className="borders green"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">
+                  {" "}
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />{" "}
+                  Set up the board
+                </h3>
+                {/* <ul>
                 <li>Engage and Reward</li>
               </ul> */}
-              <p className="p1">
-                Start by creating a board on our platform. This board will serve
-                as a centralized hub for all your activities.
-              </p>
-              {/* <p className="p1">
+                <p className="p1">
+                  Start by creating a board on our platform. This board will
+                  serve as a centralized hub for all your activities.
+                </p>
+                {/* <p className="p1">
                 By offering tangible rewards in the form of tokens, community
                 members are motivated to participate actively and contribute
                 constructively.
@@ -160,190 +232,190 @@ function Home2() {
                 This approach fosters a vibrant and committed user base that
                 drives project growth.
               </p> */}
+              </div>
+            </div>
+            <div
+              className="borders green"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">
+                  {" "}
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />{" "}
+                  Create tasks
+                </h3>
+                <p className="p1">
+                  Use FS Tokens to generate tasks on your board. These tasks are
+                  integral for the success of your community as they represent
+                  items that need to be completed.
+                </p>
+              </div>
+            </div>
+            <div
+              className="borders green"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">
+                  {" "}
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />{" "}
+                  Select tasks
+                </h3>
+                <p className="p1">
+                  Add FS Tokens to your balance before proceeding to allocate
+                  them for each individual task.
+                </p>
+              </div>
+            </div>
+            <div
+              className="borders green"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">
+                  {" "}
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />{" "}
+                  Task Validation and Rewards
+                </h3>
+                <p className="p1">
+                  Upon successful completion of a task, users are required to
+                  validate their accomplishment.
+                </p>
+                <p className="p1">
+                  {" "}
+                  As a token of recognition for their efforts, users will be
+                  rewarded with FS Tokens, providing a tangible incentive for
+                  their contributions.
+                </p>
+              </div>
             </div>
           </div>
-          <div
-            className="borders green"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">
-                {" "}
-                <img
-                  style={{ width: 30 }}
-                  src={require("../assets/images/icon_logo.svg").default}
-                  alt=""
-                />{" "}
-                Create tasks
-              </h3>
-              <p className="p1">
-                Use FS Tokens to generate tasks on your board. These tasks are
-                integral for the success of your community as they represent
-                items that need to be completed.
-              </p>
-            </div>
-          </div>
-          <div
-            className="borders green"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">
-                {" "}
-                <img
-                  style={{ width: 30 }}
-                  src={require("../assets/images/icon_logo.svg").default}
-                  alt=""
-                />{" "}
-                Select tasks
-              </h3>
-              <p className="p1">
-                Add FS Tokens to your balance before proceeding to allocate them
-                for each individual task.
-              </p>
-            </div>
-          </div>
-          <div
-            className="borders green"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">
-                {" "}
-                <img
-                  style={{ width: 30 }}
-                  src={require("../assets/images/icon_logo.svg").default}
-                  alt=""
-                />{" "}
-                Task Validation and Rewards
-              </h3>
-              <p className="p1">
-                Upon successful completion of a task, users are required to
-                validate their accomplishment.
-              </p>
-              <p className="p1">
-                {" "}
-                As a token of recognition for their efforts, users will be
-                rewarded with FS Tokens, providing a tangible incentive for
-                their contributions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="us st">
-        <h1 className="h1" data-aos="fade-down">
-          WHY <span className="purple_text">CHOOSE US?</span>
-        </h1>
-        <div className="ss padding">
-          <div
-            className="borders purple"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
-              <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
-              </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
-              </p>
+        <section className="us st">
+          <h1 className="h1" data-aos="fade-down">
+            WHY <span className="purple_text">CHOOSE US?</span>
+          </h1>
+          <div className="ss padding">
+            <div
+              className="borders purple"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+                <ul>
+                  <li>Engage and Reward</li>
+                </ul>
+                <p className="p1">
+                  FastLane empowers community creators to incentivize meaningful
+                  engagement within their projects.
+                </p>
+                <p className="p1">
+                  By offering tangible rewards in the form of tokens, community
+                  members are motivated to participate actively and contribute
+                  constructively.
+                </p>
+                <p className="p1">
+                  This approach fosters a vibrant and committed user base that
+                  drives project growth.
+                </p>
+              </div>
+            </div>
+            <div
+              className="borders purple"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+                <ul>
+                  <li>Engage and Reward</li>
+                </ul>
+                <p className="p1">
+                  FastLane empowers community creators to incentivize meaningful
+                  engagement within their projects.
+                </p>
+                <p className="p1">
+                  By offering tangible rewards in the form of tokens, community
+                  members are motivated to participate actively and contribute
+                  constructively.
+                </p>
+                <p className="p1">
+                  This approach fosters a vibrant and committed user base that
+                  drives project growth.
+                </p>
+              </div>
+            </div>
+            <div
+              className="borders purple"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+                <ul>
+                  <li>Engage and Reward</li>
+                </ul>
+                <p className="p1">
+                  FastLane empowers community creators to incentivize meaningful
+                  engagement within their projects.
+                </p>
+                <p className="p1">
+                  By offering tangible rewards in the form of tokens, community
+                  members are motivated to participate actively and contribute
+                  constructively.
+                </p>
+                <p className="p1">
+                  This approach fosters a vibrant and committed user base that
+                  drives project growth.
+                </p>
+              </div>
+            </div>
+            <div
+              className="borders purple"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              <div className="card">
+                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
+                <ul>
+                  <li>Engage and Reward</li>
+                </ul>
+                <p className="p1">
+                  FastLane empowers community creators to incentivize meaningful
+                  engagement within their projects.
+                </p>
+                <p className="p1">
+                  By offering tangible rewards in the form of tokens, community
+                  members are motivated to participate actively and contribute
+                  constructively.
+                </p>
+                <p className="p1">
+                  This approach fosters a vibrant and committed user base that
+                  drives project growth.
+                </p>
+              </div>
             </div>
           </div>
-          <div
-            className="borders purple"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
-              <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
-              </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
-              </p>
-            </div>
-          </div>
-          <div
-            className="borders purple"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
-              <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
-              </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
-              </p>
-            </div>
-          </div>
-          <div
-            className="borders purple"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <div className="card">
-              <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-              <ul>
-                <li>Engage and Reward</li>
-              </ul>
-              <p className="p1">
-                FastLane empowers community creators to incentivize meaningful
-                engagement within their projects.
-              </p>
-              <p className="p1">
-                By offering tangible rewards in the form of tokens, community
-                members are motivated to participate actively and contribute
-                constructively.
-              </p>
-              <p className="p1">
-                This approach fosters a vibrant and committed user base that
-                drives project growth.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      {/* <section className="mockups padding">
+        {/* <section className="mockups padding">
         <div className="logo">
           <img src={require("../assets/images/logo_mock.png")} alt="" />
         </div>
@@ -360,17 +432,17 @@ function Home2() {
           <IoIosArrowForward onClick={next} />
         </div>
       </section> */}
-      <section className="tt padding" id="roadmap">
-        <h1 className="h1" data-aos="fade-down">
-          Join our <span className="purple_text">Beta</span>
-        </h1>
+        <section className="tt padding" id="roadmap">
+          <h1 className="h1" data-aos="fade-down">
+            Join our <span className="purple_text">Beta</span>
+          </h1>
 
-        <img
-          className="roadmap"
-          src={require("../assets/images/roadmap.svg").default}
-          alt=""
-        />
-        {/* <div className="cards">
+          <img
+            className="roadmap"
+            src={require("../assets/images/roadmap.svg").default}
+            alt=""
+          />
+          {/* <div className="cards">
           <div className="card">
             <h3 className="title">BETA aLIST AICI FORM</h3>
             <p className="p1">Be part of the movement!</p>
@@ -420,12 +492,13 @@ function Home2() {
             </Button2>
           </div>
         </div> */}
-        {/* <h1 className="h1">
+          {/* <h1 className="h1">
           Engage as <span className="green_text">You Glow</span>
         </h1> */}
-      </section>
+        </section>
 
-      <Cookies />
+        <Cookies />
+      </div>
     </div>
   );
 }

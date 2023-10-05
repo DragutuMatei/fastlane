@@ -1,13 +1,9 @@
 @import "./base";
 @import "./navbar";
 
-.home {
+.aa .home {
   width: 100%;
-  background: url(../images/back_nice.png);
-  background-position: center 100px;
-  background-size: cover;
-  background-clip: padding-box;
-  background-repeat: no-repeat;
+
   padding: 30px $side_padding;
   padding-bottom: 0;
   position: relative;
@@ -397,7 +393,60 @@
   padding: 10px 100px;
   width: 100%;
 }
+.aa {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
 
+.aa {
+  .background {
+    background: url(../images/back_nice.png);
+    background-position: center 100px;
+    background-size: cover;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+  & img.b {
+    position: absolute;
+  }
+  .b1 {
+    left: 350px;
+  }
+  .b2 {
+    top: 700px;
+  }
+  .b3 {
+    top: 700px;
+    right: 50px;
+  }
+  .b4 {
+    left: 100px;
+  }
+  .b5 {
+    top: 2000px;
+  }
+  .b6 {
+    left: 350px;
+  }
+  .b7 {
+    left: 350px;
+  }
+  .b8 {
+    left: 350px;
+  }
+  .b9 {
+    left: 350px;
+  }
+  .b10 {
+    left: 350px;
+  }
+}
 .hover_green {
   transition: 0.2s ease-in-out;
 

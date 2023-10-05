@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home2 from "./pages/Home2";
+import { ParallaxProvider } from "react-scroll-parallax";
 function App() {
   return (
     <Router>
