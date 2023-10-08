@@ -109,6 +109,7 @@
     #banner2 {
       position: relative;
       width: 100%;
+      max-width: 1086px;
       border-radius: 16px;
       overflow: hidden;
       display: flex;
@@ -156,6 +157,7 @@
       background: url(../images/dr.png);
       background-repeat: no-repeat;
       background-size: auto;
+      animation: zoom 5s linear infinite;
     }
     h1 {
       text-align: left;
@@ -165,6 +167,7 @@
   .us.st {
     .ss {
       justify-content: flex-end;
+      animation: zoom 5s linear infinite;
       align-items: flex-end;
       background-position: left center;
       background: url(../images/st.png);
@@ -358,31 +361,104 @@
       align-items: center;
       gap: 20px;
 
+      // .card {
+      //   width: 500px;
+      //   height: 200px;
+      //   background: url(../images/banner1.png);
+      //   border-radius: 16px;
+      //   border: 3px solid #555555;
+      //   background-position: center;
+      //   background-repeat: no-repeat;
+      //   background-size: cover;
+      //   padding: 20px;
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-evenly;
+      //   align-items: flex-start;
+
+      //   .button {
+      //     margin: 10px 0;
+      //     width: fit-content;
+      //     display: flex;
+      //     .icon {
+      //       margin-left: 10px;
+      //       display: flex;
+      //       justify-content: center;
+      //       align-items: center;
+      //     }
+      //   }
+      // }
       .card {
-        width: 500px;
-        height: 200px;
-        background: url(../images/banner1.png);
-        border-radius: 16px;
-        border: 3px solid #555555;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 20px;
+        width: 325px;
+        height: 400px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         align-items: flex-start;
+        border: 1px solid $green;
+        border-radius: 16px;
+        background: $black;
+        position: relative;
 
-        .button {
-          margin: 10px 0;
-          width: fit-content;
-          display: flex;
-          .icon {
-            margin-left: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        h3.bold_p {
+          width: 100%;
+          text-align: end;
+          margin-bottom: 15px;
+          background: -webkit-linear-gradient(
+            65.91deg,
+            #7120d8 0%,
+            #2affb2 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        h3.title {
+          margin-bottom: 20px;
+          font-size: 30px;
+        }
+        .line {
+          width: 70px;
+          height: 2px;
+          border-radius: 10px;
+          background: $light_gray;
+          margin: 40px 0;
+        }
+        ul {
+          li {
+            margin-bottom: 7px;
           }
+        }
+        &:hover {
+          border-color: $white;
+        }
+
+        &.in_complete{
+          p.p1{
+            color: $green;
+          }
+        }
+
+        &.complete {
+          background: linear-gradient(
+              rgba($color: $green, $alpha: 0.25),
+              rgba($color: $green, $alpha: 0.25)
+            ),
+            linear-gradient($black, $black);
+          color: $green;
+          h3.bold_p {
+            background: transparent;
+
+            -webkit-text-fill-color: $green;
+          }
+          .line {
+            background-color: $green;
+          }
+        }
+        &.spec {
+          background: url("../images/image\ 2.png"), $black;
+          background-size: 120%;
+          background-position: center;
         }
       }
     }
@@ -466,6 +542,21 @@
     & + rect:last-of-type {
       fill: $purple;
     }
+  }
+}
+
+@keyframes zoom {
+  0% {
+    // zoom: 1;
+    background-size: 46vw;
+  }
+  50% {
+    // zoom: 1.2;
+    background-size: 47vw;
+  }
+  100% {
+    // zoom: 1;
+    background-size: 46vw;
   }
 }
 

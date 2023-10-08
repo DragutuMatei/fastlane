@@ -70,7 +70,6 @@ function Home2() {
         setb3((old) => old + 1.4);
         setb4((old) => old + 2);
         setb5((old) => old - 2);
-
       }
       lastScrollTop = st <= 0 ? 0 : st;
     };
@@ -100,12 +99,18 @@ function Home2() {
         style={{ top: b3 }}
         alt=""
       />
-      <img src={require("../assets/images/bila4.png")} className="b b4"
+      <img
+        src={require("../assets/images/bila4.png")}
+        className="b b4"
         style={{ top: b4 }}
-        alt="" />
-      <img src={require("../assets/images/bila5.png")} className="b b5"
+        alt=""
+      />
+      <img
+        src={require("../assets/images/bila5.png")}
+        className="b b5"
         style={{ left: b5 }}
-        alt="" />
+        alt=""
+      />
       {/* <img src={require("../assets/images/bila6.png")} className="b b6" alt="" />
       <img src={require("../assets/images/bila7.png")} className="b b7" alt="" />
       <img src={require("../assets/images/bila8.png")} className="b b8" alt="" />
@@ -269,7 +274,7 @@ function Home2() {
                     src={require("../assets/images/icon_logo.svg").default}
                     alt=""
                   />{" "}
-                  Select tasks
+                  Asign rewards
                 </h3>
                 <p className="p1">
                   Add FS Tokens to your balance before proceeding to allocate
@@ -318,23 +323,20 @@ function Home2() {
               data-aos-delay="300"
             >
               <div className="card">
-                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-                <ul>
-                  <li>Engage and Reward</li>
-                </ul>
-                <p className="p1">
-                  FastLane empowers community creators to incentivize meaningful
-                  engagement within their projects.
-                </p>
-                <p className="p1">
-                  By offering tangible rewards in the form of tokens, community
-                  members are motivated to participate actively and contribute
-                  constructively.
-                </p>
-                <p className="p1">
-                  This approach fosters a vibrant and committed user base that
-                  drives project growth.
-                </p>
+                <h3 className="title">
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />
+                  FastLane: your Reliable Platform for Community Engagement
+                </h3>
+                <h4 className="p1">
+                  At <span className="green_text">FastLane</span> we truly stand
+                  out in the changing world for many reasons. We take pride in
+                  being the platform you can rely on for community engagement
+                  offering a range of tools that set us apart.
+                </h4>
               </div>
             </div>
             <div
@@ -343,23 +345,20 @@ function Home2() {
               data-aos-delay="300"
             >
               <div className="card">
-                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-                <ul>
-                  <li>Engage and Reward</li>
-                </ul>
-                <p className="p1">
-                  FastLane empowers community creators to incentivize meaningful
-                  engagement within their projects.
-                </p>
-                <p className="p1">
-                  By offering tangible rewards in the form of tokens, community
-                  members are motivated to participate actively and contribute
-                  constructively.
-                </p>
-                <p className="p1">
-                  This approach fosters a vibrant and committed user base that
-                  drives project growth.
-                </p>
+                <h3 className="title">
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />
+                  Foster Genuine Interactions and Accelerate Growth with
+                  FastLane
+                </h3>
+                <h4 className="p1">
+                  <span className="green_text">FastLane</span> is a tool that
+                  can be used in various ways to foster genuine interactions
+                  reward active participation and accelerate community growth.
+                </h4>
               </div>
             </div>
             <div
@@ -368,48 +367,44 @@ function Home2() {
               data-aos-delay="300"
             >
               <div className="card">
-                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-                <ul>
-                  <li>Engage and Reward</li>
-                </ul>
-                <p className="p1">
-                  FastLane empowers community creators to incentivize meaningful
-                  engagement within their projects.
-                </p>
-                <p className="p1">
-                  By offering tangible rewards in the form of tokens, community
-                  members are motivated to participate actively and contribute
-                  constructively.
-                </p>
-                <p className="p1">
-                  This approach fosters a vibrant and committed user base that
-                  drives project growth.
-                </p>
+                <h3 className="title">
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />
+                  Boost Community Involvement with FS Token Rewards
+                </h3>
+                <h4 className="p1">
+                  With <span className="green_text">FastLane</span>, members
+                  receive token rewards that ensure their contributions are
+                  recognized ultimately boosting community involvement.
+                </h4>
               </div>
-            </div>
+            </div>{" "}
             <div
               className="borders purple"
               data-aos="fade-right"
               data-aos-delay="300"
             >
               <div className="card">
-                <h3 className="title">INCENTIVIZED ENGAGEMENT</h3>
-                <ul>
-                  <li>Engage and Reward</li>
-                </ul>
-                <p className="p1">
-                  FastLane empowers community creators to incentivize meaningful
-                  engagement within their projects.
-                </p>
-                <p className="p1">
-                  By offering tangible rewards in the form of tokens, community
-                  members are motivated to participate actively and contribute
-                  constructively.
-                </p>
-                <p className="p1">
-                  This approach fosters a vibrant and committed user base that
-                  drives project growth.
-                </p>
+                <h3 className="title">
+                  {" "}
+                  <img
+                    style={{ width: 30 }}
+                    src={require("../assets/images/icon_logo.svg").default}
+                    alt=""
+                  />
+                  Nurture Growth and Development
+                </h3>
+                <h4 className="p1">
+                  Our focus goes beyond creating communities; we also strive to
+                  nurture their growth and development. We prioritize
+                  interactions and shared goals. By providing features, like
+                  community creation and the campaign board{" "}
+                  <span className="green_text">FastLane</span> guarantees a
+                  engaged and satisfied community.
+                </h4>
               </div>
             </div>
           </div>
@@ -434,16 +429,16 @@ function Home2() {
       </section> */}
         <section className="tt padding" id="roadmap">
           <h1 className="h1" data-aos="fade-down">
-            Join our <span className="purple_text">Beta</span>
+            <span className="purple_text">Roadmap</span>
           </h1>
 
-          <img
+          {/* <img
             className="roadmap"
             src={require("../assets/images/roadmap.svg").default}
             alt=""
-          />
-          {/* <div className="cards">
-          <div className="card">
+          /> */}
+          <div className="cards">
+            {/* <div className="card">
             <h3 className="title">BETA aLIST AICI FORM</h3>
             <p className="p1">Be part of the movement!</p>
             <Button2>
@@ -490,8 +485,67 @@ function Home2() {
                 </span>
               </h4>
             </Button2>
+          </div> */}
+
+            <div className="card complete" data-aos="fade-right">
+              <h3 className="bold_p">PHASE 01</h3>
+              <h3 className="title">Plannig</h3>
+              <p className="p1">
+                Quality comes first. We took our time to plan out everything,
+                design and build our product first.
+              </p>
+              <div className="line"></div>
+              <ul>
+                <li>Branding and Concept</li>
+                <li>Design FastLane Web App</li>
+                <li>Strategies and Structures</li>
+              </ul>
+            </div>
+            <div className="card in_complete" data-aos="fade-right">
+              <h3 className="bold_p">PHASE 02</h3>
+              <h3 className="title">Plannig</h3>
+              <p className="p1">
+                Quality comes first. We took our time to plan out everything,
+                design and build our product first.
+              </p>
+              <div className="line"></div>
+              <ul>
+                <li>Branding and Concept</li>
+                <li>Design FastLane Web App</li>
+                <li>Strategies and Structures</li>
+              </ul>
+            </div>
+            <div className="card" data-aos="fade-right">
+              <h3 className="bold_p">PHASE 03</h3>
+              <h3 className="title">Plannig</h3>
+              <p className="p1">
+                Quality comes first. We took our time to plan out everything,
+                design and build our product first.
+              </p>
+              <div className="line"></div>
+              <ul>
+                <li>Branding and Concept</li>
+                <li>Design FastLane Web App</li>
+                <li>Strategies and Structures</li>
+              </ul>
+            </div>
+            <div className="card" data-aos="fade-right">
+              <h3 className="bold_p">PHASE 04</h3>
+              <h3 className="title">Plannig</h3>
+              <p className="p1">
+                Quality comes first. We took our time to plan out everything,
+                design and build our product first.
+              </p>
+              <div className="line"></div>
+              <ul>
+                <li>Branding and Concept</li>
+                <li>Design FastLane Web App</li>
+                <li>Strategies and Structures</li>
+              </ul>
+            </div>
+            <div className="card spec" data-aos="fade-right"></div>
+            <div className="card spec" data-aos="fade-right"></div>
           </div>
-        </div> */}
           {/* <h1 className="h1">
           Engage as <span className="green_text">You Glow</span>
         </h1> */}
