@@ -307,6 +307,11 @@ function Home2() {
                   rewarded with FS Tokens, providing a tangible incentive for
                   their contributions.
                 </p>
+                <p className="p1">
+                  Integrating FastLane with platforms such, as Discord, Telegram
+                  and Twitter, makes it easier to validate and engage with
+                  tasks.
+                </p>
               </div>
             </div>
           </div>
@@ -489,62 +494,79 @@ function Home2() {
 
             <div className="card complete" data-aos="fade-right">
               <h3 className="bold_p">PHASE 01</h3>
-              <h3 className="title">Plannig</h3>
+              <h3 className="title">Community Growth</h3>
               <p className="p1">
-                Quality comes first. We took our time to plan out everything,
-                design and build our product first.
+                The primary focus is on building and growing the FastLane
+                community.
               </p>
               <div className="line"></div>
-              <ul>
-                <li>Branding and Concept</li>
-                <li>Design FastLane Web App</li>
-                <li>Strategies and Structures</li>
-              </ul>
+              <h3 className="title">Beta Launch</h3>
+              <p className="p1">
+                Roll out the FastLane platform in Beta, allowing for testing and
+                refining of features.
+              </p>
             </div>
             <div className="card in_complete" data-aos="fade-right">
+              <h3 className="bold_p">PHASE 01</h3>
+              <h3 className="title">Enroll Beta Users</h3>
+              <p className="p1">
+                Invite early users to participate in the beta testing phase,
+                gathering valuable feedback and insights.
+              </p>
+              <div className="line"></div>
+              <h3 className="title">Onboard New Projects in Beta Phase</h3>
+              <p className="p1">
+                Encourage project founders to join the platform during the beta
+                phase, enabling them to create and manage communities.
+              </p>
+            </div>
+            <div className="card" data-aos="fade-right">
+              <h3 className="bold_p">PHASE 01</h3>
+              <h3 className="title">Token Launch</h3>
+              <p className="p1">
+                Introduce the FS Token to the community, explaining its utility
+                and role in incentivizing engagement.
+              </p>
+              <div className="line"></div>
+              <ul>
+                <li>Branding and Concept</li>
+                <li>Design FastLane Web App</li>
+                <li>Strategies and Structures</li>
+              </ul>
+            </div>
+            <div className="card" data-aos="fade-right">
               <h3 className="bold_p">PHASE 02</h3>
-              <h3 className="title">Plannig</h3>
+              <h3 className="title">Platform Enhancement and Expansion</h3>
               <p className="p1">
-                Quality comes first. We took our time to plan out everything,
-                design and build our product first.
+                Aim to list the FS Token on popular cryptocurrency exchanges
+                (CEXs) to increase accessibility and liquidity.
               </p>
               <div className="line"></div>
-              <ul>
-                <li>Branding and Concept</li>
-                <li>Design FastLane Web App</li>
-                <li>Strategies and Structures</li>
-              </ul>
+              <h3 className="title">
+                Scoring System for Social Media Profiles
+              </h3>
+              <p className="p1">
+                Implement a scoring system that evaluates and ranks users'
+                social media profiles based on their engagement and
+                contributions within FastLane communities.Provide transparent
+                scoring criteria to ensure fairness and transparency.
+              </p>{" "}
             </div>
             <div className="card" data-aos="fade-right">
-              <h3 className="bold_p">PHASE 03</h3>
-              <h3 className="title">Plannig</h3>
+              <h3 className="bold_p">PHASE 02</h3>
+              <h3 className="title">AI Scoring for Onchain User Data</h3>
               <p className="p1">
-                Quality comes first. We took our time to plan out everything,
-                design and build our product first.
+                Integrate AI-driven algorithms to analyze onchain user data,
+                allowing for deeper insights into user behavior and engagement.
+                Utilize AI scoring to identify and reward users for meaningful
+                contributions and interactions within the platform.
               </p>
-              <div className="line"></div>
-              <ul>
-                <li>Branding and Concept</li>
-                <li>Design FastLane Web App</li>
-                <li>Strategies and Structures</li>
-              </ul>
             </div>
-            <div className="card" data-aos="fade-right">
-              <h3 className="bold_p">PHASE 04</h3>
-              <h3 className="title">Plannig</h3>
-              <p className="p1">
-                Quality comes first. We took our time to plan out everything,
-                design and build our product first.
-              </p>
-              <div className="line"></div>
-              <ul>
-                <li>Branding and Concept</li>
-                <li>Design FastLane Web App</li>
-                <li>Strategies and Structures</li>
-              </ul>
-            </div>
-            <div className="card spec" data-aos="fade-right"></div>
-            <div className="card spec" data-aos="fade-right"></div>
+            <div
+              className="card spec"
+              style={{ height: "683.4px" }}
+              data-aos="fade-right"
+            ></div>
           </div>
           {/* <h1 className="h1">
           Engage as <span className="green_text">You Glow</span>
