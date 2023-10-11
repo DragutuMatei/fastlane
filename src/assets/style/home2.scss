@@ -390,7 +390,7 @@
       // }
       .card {
         width: 325px;
-        height: auto;
+        height: 339px;
         padding: 30px;
         display: flex;
         flex-direction: column;
@@ -457,7 +457,7 @@
         }
         &.spec {
           background: url("../images/image\ 2.png"), $black;
-          background-size: cover;
+          background-size: 110%;
           background-position: center;
         }
       }
