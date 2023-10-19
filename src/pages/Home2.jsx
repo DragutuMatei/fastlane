@@ -77,6 +77,14 @@ function Home2() {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  const tweetText = "amin";
+  const handleTweetButtonClick = () => {
+    console.log(tweetText);
+    const tweetIntentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      tweetText
+    )}`;
+    window.open(tweetIntentUrl, "_blank");
+  };
 
   return (
     <div className="aa">
@@ -142,6 +150,18 @@ function Home2() {
                 </span>
               </h4>
             </Button2>
+            <Button1
+              onClick={() => {
+                handleTweetButtonClick();
+              }}
+            >
+              <h4 className="button">
+                Apply for BETA access
+                <span className="icon">
+                  <AiOutlineArrowRight />
+                </span>
+              </h4>
+            </Button1>
           </div>
         </section>
 
