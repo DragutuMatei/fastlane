@@ -77,7 +77,11 @@ function Home2() {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  const tweetText = "amin";
+  const tweetText = `Fastlane beta testing application is live!
+
+Apply now: fastlane.buzz
+Engage. Grow. Evolve.
+$fstlane`;
   const handleTweetButtonClick = () => {
     console.log(tweetText);
     const tweetIntentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
@@ -99,7 +103,9 @@ function Home2() {
             setMsg("User already enrolled!");
             setEnrolled(false);
           } else {
-            setMsg("");
+            setMsg(
+              "Congratulations on taking the bold step into the Fastlane universe! The beta journey has just begun."
+            );
             setEnrolled(true);
           }
         })
