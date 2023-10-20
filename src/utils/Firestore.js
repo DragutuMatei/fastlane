@@ -35,7 +35,6 @@ export default class Firestore {
 
     const app = initializeApp(firebaseConfig);
     this.db = getFirestore();
-    this.auth = getAuth(app);
   }
 
   getDb() {
