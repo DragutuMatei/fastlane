@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import "../assets/style/home2.scss";
 import Button2 from "../components/buttons/Button2";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button1 from "../components/buttons/Button1";
 import Button3 from "../components/buttons/Button3";
 import Cookies from "../utils/Cookies";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useParallax } from "react-scroll-parallax";
-
+import Firestore from "../utils/Firestore";
+import { async } from "@firebase/util";
+const fire = new Firestore();
 let i = 0;
 function Home2() {
   const [images, setImages] = useState([
@@ -86,6 +86,25 @@ function Home2() {
     window.open(tweetIntentUrl, "_blank");
   };
 
+  const [username, setUsername] = useState("");
+  const [msg, setMsg] = useState("");
+  const [enrolled, setEnrolled] = useState(false);
+  const enroll = async (username) => {
+    if (username != "")
+      await fire
+        .addItem("users", { username })
+        .then((res) => {
+          console.log(res);
+          if (!res) {
+            setMsg("User already enrolled!");
+            setEnrolled(false);
+          } else {
+            setMsg("");
+            setEnrolled(true);
+          }
+        })
+        .catch((error) => console.log(error));
+  };
   return (
     <div className="aa">
       <div className="background"></div>
@@ -143,25 +162,46 @@ function Home2() {
             </p>
 
             <Button2>
-              <h4 data-aos="fade-left" data-aos-delay="550" className="button">
+              <a
+                href=""
+                data-aos="fade-left"
+                data-aos-delay="550"
+                className="button"
+              >
                 Join our community
                 <span className="icon">
                   <AiOutlineArrowRight />
                 </span>
-              </h4>
+              </a>
             </Button2>
-            <Button1
+            <input
+              type="text"
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="@"
+            />
+            <Button2
               onClick={() => {
-                handleTweetButtonClick();
+                enroll(username);
               }}
             >
-              <h4 className="button">
-                Apply for BETA access
-                <span className="icon">
-                  <AiOutlineArrowRight />
-                </span>
-              </h4>
-            </Button1>
+              <h4 className="button">Apply for BETA access</h4>
+            </Button2>
+            {msg != "" && <p className="p1">{msg}</p>}
+            {enrolled && (
+              <Button1
+                onClick={() => {
+                  handleTweetButtonClick();
+                }}
+              >
+                <h4 className="button">
+                  Tweet this
+                  {/* Apply for BETA access */}
+                  <span className="icon">
+                    <AiOutlineArrowRight />
+                  </span>
+                </h4>
+              </Button1>
+            )}
           </div>
         </section>
 
