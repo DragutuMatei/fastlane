@@ -183,7 +183,7 @@ $fstlane`;
             <input
               type="text"
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="@"
+              placeholder="@twitter"
             />
             <Button2
               onClick={() => {
