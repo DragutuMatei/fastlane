@@ -77,10 +77,12 @@ function Home2() {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  const tweetText = `Fastlane beta testing application is live!
+  const tweetText = `I applied for beta access on the fastlane app.
 
 Apply now: fastlane.buzz
+ 
 Engage. Grow. Evolve.
+  
 $fstlane`;
   const handleTweetButtonClick = () => {
     console.log(tweetText);
