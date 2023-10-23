@@ -81,9 +81,7 @@ function Home2() {
 
 Apply now: fastlane.buzz
  
-Engage. Grow. Evolve.
-  
-$fstlane`;
+Engage. Grow. Evolve.`;
   const handleTweetButtonClick = () => {
     console.log(tweetText);
     const tweetIntentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
@@ -109,7 +107,7 @@ $fstlane`;
               "Congratulations on taking the bold step into the Fastlane universe! The beta journey has just begun."
             );
             setEnrolled(true);
-            handleTweetButtonClick()
+            handleTweetButtonClick();
           }
         })
         .catch((error) => console.log(error));
@@ -184,13 +182,13 @@ $fstlane`;
                 </span>
               </a>
             </Button2>
-{/*
+            {/*
             <input
               type="text"
               onChange={(e) => setUsername(e.target.value)}
               placeholder="@twitter"
             />
-*/ }
+*/}
             <Button1
               onClick={() => {
                 handleTweetButtonClick();
@@ -214,8 +212,7 @@ $fstlane`;
               //     </span>
               //   </h4>
               // </Button1>
-            )
-            }
+            )}
           </div>
         </section>
 
