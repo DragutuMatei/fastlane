@@ -184,14 +184,16 @@ $fstlane`;
                 </span>
               </a>
             </Button2>
+{/*
             <input
               type="text"
               onChange={(e) => setUsername(e.target.value)}
               placeholder="@twitter"
             />
+*/ }
             <Button1
               onClick={() => {
-                enroll(username);
+                handleTweetButtonClick();
               }}
             >
               <h4 className="button">Apply for BETA access</h4>
