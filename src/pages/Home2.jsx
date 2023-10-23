@@ -109,6 +109,7 @@ $fstlane`;
               "Congratulations on taking the bold step into the Fastlane universe! The beta journey has just begun."
             );
             setEnrolled(true);
+            handleTweetButtonClick()
           }
         })
         .catch((error) => console.log(error));
@@ -187,29 +188,31 @@ $fstlane`;
               onChange={(e) => setUsername(e.target.value)}
               placeholder="@twitter"
             />
-            <Button2
+            <Button1
               onClick={() => {
                 enroll(username);
               }}
             >
               <h4 className="button">Apply for BETA access</h4>
-            </Button2>
+            </Button1>
             {msg != "" && <p className="p1">{msg}</p>}
             {enrolled && (
-              <Button1
-                onClick={() => {
-                  handleTweetButtonClick();
-                }}
-              >
-                <h4 className="button">
-                  Tweet this
-                  {/* Apply for BETA access */}
-                  <span className="icon">
-                    <AiOutlineArrowRight />
-                  </span>
-                </h4>
-              </Button1>
-            )}
+              <></>
+              // <Button1
+              //   onClick={() => {
+              //     handleTweetButtonClick();
+              //   }}
+              // >
+              //   <h4 className="button">
+              //     Tweet this
+              //     {/* Apply for BETA access */}
+              //     <span className="icon">
+              //       <AiOutlineArrowRight />
+              //     </span>
+              //   </h4>
+              // </Button1>
+            )
+            }
           </div>
         </section>
 
