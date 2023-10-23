@@ -81,7 +81,10 @@ function Home2() {
 
 Apply now: fastlane.buzz
  
-Engage. Grow. Evolve.`;
+Engage. Grow. Evolve.
+
+@fstlaneapp
+`;
   const handleTweetButtonClick = () => {
     console.log(tweetText);
     const tweetIntentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
