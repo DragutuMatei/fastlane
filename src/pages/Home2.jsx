@@ -172,8 +172,9 @@ $fstlane`;
 
             <Button2>
               <a
-                href=""
+                href="https://t.me/fastlaneportal"
                 data-aos="fade-left"
+                target="_blank"
                 data-aos-delay="550"
                 className="button"
               >
