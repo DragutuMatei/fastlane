@@ -38,6 +38,7 @@ function Navbar() {
           </div>
         </div> */}
         <div className="r">
+
           <a
             className="button r"
             href="https://t.me/fastlaneportal"
