@@ -19,7 +19,7 @@ function Footer() {
             <a href="https://twitter.com/fstlaneapp" target="_blank">
               <FaSquareXTwitter style={{ fontSize: "34.29px" }} />
             </a>
-            <a href="">
+            <a href="https://t.me/fastlaneportal" target="_blank">
               <BsTelegram />
             </a>
           </div>
