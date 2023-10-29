@@ -38,9 +38,8 @@ function Navbar() {
           </div>
         </div> */}
         <div className="r">
-
           <a
-            className="button r"
+            className="button r h4s"
             href="https://t.me/fastlaneportal"
             target="_blank"
           >
