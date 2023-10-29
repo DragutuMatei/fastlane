@@ -35,7 +35,7 @@ nav {
       .drop {
         margin: 0 10px;
       }
-      .h4s {
+      .h4s, h4 {
         color: $white;
         display: flex;
         span {
@@ -84,7 +84,7 @@ nav {
         border-radius: 16px;
         padding: 6px;
         box-sizing: border-box;
-        .h4s {
+        .h4s, h4 {
           display: flex;
           padding: 5px 15px;
         }
