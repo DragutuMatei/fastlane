@@ -243,7 +243,7 @@ Engage. Grow. Evolve.
                     Read our Docs
                   </h4>
                 </Button1>
-                <Button3 link={""}>
+                <Button3 link={"https://twitter.com/fstlaneapp"}>
                   <h4
                     className="button"
                     data-aos="fade-down"

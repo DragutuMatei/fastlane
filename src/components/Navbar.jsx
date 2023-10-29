@@ -38,7 +38,7 @@ function Navbar() {
           </div>
         </div> */}
         <div className="r">
-          <h4 className="button r">Join our community</h4>
+          <a className="button r" href="https://t.me/fastlaneportal" target="_blank">Join our community</a>
           <Button3 link={"https://docs.fastlane.buzz"}>
             <h4 className="button">Read our Gitbook</h4>
           </Button3>
